@@ -1,0 +1,153 @@
+body {
+    background-color: #221f2f;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    padding: 10px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #676767;
+    left: 14%;
+    top: 89%;
+    filter: blur(150px);
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #1d1d1d;
+    left: 60%;
+    top: 23%;
+    filter: blur(150px);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    max-width: 60rem;
+    /* Increase the max-width to make the container wider */
+    width: 90%;
+    text-align: center;
+    /* Align the container's content to the center */
+    background: rgba(0, 0, 0, 0.44);
+    background-size: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+.container h2 {
+    font-size: 1.2rem;
+}
+
+#refresh {
+    display: block;
+    width: 200px;
+    margin: 1.5rem auto;
+    /* Adjust the margin to move the button down slightly */
+    padding: 16px 24px;
+    background-color: #3a3a3a;
+    color: #fff;
+    font: inherit;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: transparent;
+    border: .5px solid white
+}
+
+#refresh:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.card {
+    flex-direction: column;
+    background-color: #171a1c;
+    border-radius: 24px;
+    /* Increase the border radius to make the card edges rounded */
+    color: #bebebe;
+    padding: 32px;
+    margin-top: 2rem;
+    width: 32rem;
+    /* Increase the width of the card to make it wider */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    /* Add a stronger shadow for a more realistic effect */
+}
+
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+.content {
+    text-align: left;
+}
+
+.card-number {
+    color: white
+}
+
+#number {
+    font-size: 1.8rem;
+}
+
+.card-expire,
+.card-cvv {
+    display: inline-block;
+}
+
+.card-expire {
+    width: 100px;
+    float: left
+}
+
+.card-expire-month {
+    margin-right: 1rem;
+}
+
+.card-cvv {
+    width: 50px;
+    text-align: right;
+    float: right;
+}
+
+#expire,
+#cvv {
+    color: white
+}
+
+/* Add your custom styles for SVG logo if needed */
